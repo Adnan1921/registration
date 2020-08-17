@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'home/index'
   root to: 'partners#index'
   resources :users
   resources :cars
