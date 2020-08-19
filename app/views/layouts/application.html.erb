@@ -16,6 +16,11 @@
 		  <% for menu in @menu do %>
 		  	<a href="/<%= menu%>"><%= menu%></a> &nbsp;
 		  <%end%>
+		  
+		  |<% if !current_user %> <a href="/users/login"> Sign In</a> <a href="/users/register"> Register </a> 
+		  <%else%>
+		  Selam Alejk <%=current_user.email%> <a href="/logout">Logout</a>
+		  <% end %>
 	  </div>
 	  <p class = "notice" ><%= notice %> </p>
 	  <p class = "alert" ><%= alert %></p>
