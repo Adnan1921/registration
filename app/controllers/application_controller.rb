@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
   def fetch_menu 
     @menu = ["partners","cars","registrations", "users"]
   end
-  
+ 
   
 end
