@@ -17,7 +17,7 @@
 		  	<a href="/<%= menu%>"><%= menu%></a> &nbsp;
 		  <%end%>
 		  
-		  |<% if !current_user %> <a href="/users/login"> Sign In</a> <a href="/users/register"> Register </a> 
+		  |<% if !current_user %> <a href="/users/sign_in"> Sign In</a> <a href="/users/sign_up"> Register </a> 
 		  <%else%>
 		  Selam Alejk <%=current_user.email%> <a href="/logout">Logout</a>
 		  <% end %>

@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   #get'pages/home'
   
   #devise_for :users
-  devise_for :users, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
-  
+  devise_for :users
   #get'home/index'
   root to: 'partners#index'
   resources :users
