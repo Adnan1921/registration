@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :fetch_menu
   def fetch_menu 
-    @menu = ["partners","cars", "users"]
+    @menu = ["partners","cars"]
   end
  
   
