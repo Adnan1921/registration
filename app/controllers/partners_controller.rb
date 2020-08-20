@@ -76,7 +76,7 @@ class PartnersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def partner_params
-      params.require(:partner).permit(:name, :address, :phone)
+      params.require(:partner).permit(:name, :address, :phone, :user_id)
     end
   end
 
