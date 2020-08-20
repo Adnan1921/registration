@@ -19,7 +19,7 @@
 		  
 		  |<% if !current_user %> <a href="/users/sign_in"> Sign In</a> <a href="/users/sign_up"> Register </a> 
 		  <%else%>
-		  Selam Alejk <%=current_user.email%> <a href="/logout">Logout</a>
+		  Selam Alejk <%=current_user.id%> <a href="/logout">Logout</a>
 		  <% end %>
 	  </div>
 	  <p class = "notice" ><%= notice %> </p>

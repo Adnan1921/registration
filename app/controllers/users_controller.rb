@@ -62,11 +62,6 @@ class UsersController < ApplicationController
   end
   
   
-    validates :name, presence: true
-  
-
-  Person.create(name: "John Doe").valid? # => true
-  Person.create(name: nil).valid? # => false
 
   private
     # Use callbacks to share common setup or constraints between actions.

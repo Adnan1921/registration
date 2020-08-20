@@ -29,7 +29,7 @@ class PartnersController < ApplicationController
   def create
     @partner = Partner.new(partner_params)
     
-
+    #raise partner_params.inspect
     respond_to do |format|
       if @partner.save
         format.html { redirect_to @partner, notice: 'Partner was successfully created.' }
@@ -44,6 +44,7 @@ class PartnersController < ApplicationController
   # PATCH/PUT /partners/1
   # PATCH/PUT /partners/1.json
   def update
+    
     respond_to do |format|
       if @partner.update(partner_params)
         format.html { redirect_to @partner, notice: 'Partner was successfully updated.' }
@@ -76,7 +77,7 @@ class PartnersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def partner_params
-      params.require(:partner).permit(:name, :address, :phone, :user_id)
+      params.require(:partner).permit(:name, :address, :phone, :user_id, :email)
     end
   end
 
