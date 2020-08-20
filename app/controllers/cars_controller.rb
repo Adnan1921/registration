@@ -1,5 +1,7 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
+  validates :name, presence: true
+  
 
   # GET /cars
   # GET /cars.json
