@@ -15,16 +15,20 @@ class PartnersController < ApplicationController
   # GET /partners/new
   def new
     @partner = Partner.new
+    
   end
+  
 
   # GET /partners/1/edit
   def edit
   end
+ 
 
   # POST /partners
   # POST /partners.json
   def create
     @partner = Partner.new(partner_params)
+    
 
     respond_to do |format|
       if @partner.save
@@ -60,8 +64,11 @@ class PartnersController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  
+  
+  
   private
+  
     # Use callbacks to share common setup or constraints between actions.
     def set_partner
       @partner = Partner.find(params[:id])
@@ -71,5 +78,6 @@ class PartnersController < ApplicationController
     def partner_params
       params.require(:partner).permit(:name, :address, :phone)
     end
+  end
+
     
-end
