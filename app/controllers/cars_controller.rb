@@ -1,6 +1,5 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
-  validates :name, presence: true
   
 
   # GET /cars
@@ -62,13 +61,9 @@ class CarsController < ApplicationController
       format.json { head :no_content }
     end
   end
-  class CarsController < ApplicationController
-    validates :User, :Plate, :Registration_date,
-    presence: true
-  end
+ 
 
-  Car.create(name: "John Doe").valid? # => true
-  Car.create(name: nil).valid? # => false
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -78,7 +73,7 @@ class CarsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def car_params
-      params.require(:car).permit(:user_id, :plate, :registration_date)
+      params.require(:car).permit(:user_id, :plate, :registration_date, :username_id)
     end
     
     
