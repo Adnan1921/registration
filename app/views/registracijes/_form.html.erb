@@ -1,0 +1,28 @@
+<%= form_with(model: registracije, local: true) do |form| %>
+  <% if registracije.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(registracije.errors.count, "error") %> prohibited this registracije from being saved:</h2>
+
+      <ul>
+        <% registracije.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :car_id %>
+    <%= form.text_field :car_id %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :car_exp_date %>
+    <%= form.text_field :car_exp_date %>
+  </div>
+  
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

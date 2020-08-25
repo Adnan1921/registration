@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Registracijes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Car</th>
+      <th>Car exp date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registracijes.each do |registracije| %>
+      <tr>
+        <td><%= registracije.car_id %></td>
+		<td><%= registracije.car_exp_date %></td>
+        
+        <td><%= link_to 'Show', registracije %></td>
+        <td><%= link_to 'Edit', edit_registracije_path(registracije) %></td>
+        <td><%= link_to 'Destroy', registracije, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registracije', new_registracije_path %>

@@ -6,8 +6,10 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Address</th>
-      <th>Phone</th>
+      <th>User</th>
+	  <th>Email</th>
+	  <th>Address</th>
+	  <th>Phone</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +18,8 @@
     <% @partners.each do |partner| %>
       <tr>
         <td><%= partner.name %></td>
+		<td><%= partner.user_id %></td>
+		<td><%= partner.email %></td>
         <td><%= partner.address %></td>
         <td><%= partner.phone %></td>
         <td><%= link_to 'Show', partner %></td>

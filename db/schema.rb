@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_24_084833) do
+ActiveRecord::Schema.define(version: 2020_08_25_123009) do
+
+  create_table "books", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.integer "publication_year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "cars", force: :cascade do |t|
     t.text "user_id"
@@ -18,7 +26,15 @@ ActiveRecord::Schema.define(version: 2020_08_24_084833) do
     t.text "registration_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "telefon"
+    t.text "username"
+    t.text "userphone"
+    t.text "user_name"
+    t.text "user_phone"
+    t.string "username_id"
+    t.text "phone"
+    t.text "telefon"
+    t.string "telefonba"
+    t.string "datum"
   end
 
   create_table "partners", force: :cascade do |t|
@@ -28,8 +44,23 @@ ActiveRecord::Schema.define(version: 2020_08_24_084833) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "user_id"
-    t.text "email"
+    t.string "phone_id"
     t.text "telefon"
+    t.text "email"
+  end
+
+  create_table "registracijees", force: :cascade do |t|
+    t.string "car_id"
+    t.string "car_exp_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "registracijes", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "car_id"
+    t.string "car_exp_date"
   end
 
   create_table "registrations", force: :cascade do |t|

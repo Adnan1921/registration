@@ -1,0 +1,3 @@
+class Registracije < ApplicationRecord
+  
+end

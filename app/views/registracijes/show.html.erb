@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Car:</strong>
+  <%= @registracije.car_id %>
+</p>
+<p>
+  <strong>Car exp date:</strong>
+  <%= @registracije.car_exp_date %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_registracije_path(@registracije) %> |
+<%= link_to 'Back', registracijes_path %>
