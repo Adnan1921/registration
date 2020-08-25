@@ -19,7 +19,7 @@
 		  
 		  |<% if !current_user %> <a href="/users/sign_in"> Sign In</a> <a href="/users/sign_up"> Register </a> 
 		  <%else%>
-		  Selam Alejk <%=current_user.id%> <a href="/logout">Logout</a>
+		  Selam Alejk <%=current_user.id%> <%= button_to "logout", destroy_user_session_path, method: :delete  %>
 		  <% end %>
 	  </div>
 	  <p class = "notice" ><%= notice %> </p>
@@ -29,3 +29,16 @@
     </div>
   </body>
 </html>
+<script>
+	$(function(){
+		$('.signout').click(function(){
+			$.ajax({
+			    url: '/users/sign_out',
+			    type: 'DELETE',
+			    success: function(result) {
+			       alert('uspjesno')
+			    }
+			});
+		})
+	})
+</script>
