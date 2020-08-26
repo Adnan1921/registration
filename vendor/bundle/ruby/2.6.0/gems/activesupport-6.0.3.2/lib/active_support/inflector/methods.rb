@@ -279,7 +279,7 @@ module ActiveSupport
 
       names.inject(Object) do |constant, name|
         if constant == Object
-          constant.const_get(name)
+          constant.const_get(Partners)
         else
           candidate = constant.const_get(name)
           next candidate if constant.const_defined?(name, false)
