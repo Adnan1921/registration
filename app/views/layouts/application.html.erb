@@ -46,7 +46,16 @@
  
 	  
 	  <div class="container">
-	
+	  <div class="header">
+		  <% for menu in @menu do %>
+		  	<a href="/<%= menu%>"><%= menu%></a> &nbsp;
+		  <%end%>
+		  
+		  |<% if !current_user %> <a href="/users/sign_in"> Sign In</a> <a href="/users/sign_up"> Register </a> 
+		  <%else%>
+		  Selam Alejk <%=current_user.id%> <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+		  <% end %>
+	  </div>
 	  <p class = "notice" ><%= notice %> </p>
 	  <p class = "alert" ><%= alert %></p>
 	  
