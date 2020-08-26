@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_08_25_172904) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "user_id"
     t.text "email"
-<<<<<<< HEAD
+    t.text "telefon"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -38,16 +38,6 @@ ActiveRecord::Schema.define(version: 2020_08_25_172904) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "registracijees", force: :cascade do |t|
-    t.string "car_id"
-    t.string "car_exp_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-=======
-    t.text "telefon"
->>>>>>> 7589e8893b6ac39086bba72a9c3604f3fcc37f43
   end
 
   create_table "registracijes", force: :cascade do |t|

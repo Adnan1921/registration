@@ -1,35 +1,48 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Partners</h1>
-
-<table>
+<%- model_class = Partner -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>User</th>
-	  <th>Email</th>
-	  <th>Address</th>
-	  <th>Phone</th>
-      <th colspan="3"></th>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:address) %></th>
+      <th><%= model_class.human_attribute_name(:phone) %></th>
+      <th><%= model_class.human_attribute_name(:user_id) %></th>
+      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><%= model_class.human_attribute_name(:telefon) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
   <tbody>
     <% @partners.each do |partner| %>
       <tr>
+        <td><%= link_to partner.id, partner_path(partner) %></td>
         <td><%= partner.name %></td>
-		<td><%= partner.user_id %></td>
-		<td><%= partner.email %></td>
         <td><%= partner.address %></td>
         <td><%= partner.phone %></td>
-        <td><%= link_to 'Show', partner %></td>
-        <td><%= link_to 'Edit', edit_partner_path(partner) %></td>
-        <td><%= link_to 'Destroy', partner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= partner.user_id %></td>
+        <td><%= partner.email %></td>
+        <td><%= partner.telefon %></td>
+        <td><%=l partner.created_at %></td>
+        <td>
+          <%= link_to t('.show', :default => t("helpers.links.show")),
+                      partner_path(partner), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_partner_path(partner), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      partner_path(partner),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Partner', new_partner_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_partner_path,
+            :class => 'btn btn-primary' %>

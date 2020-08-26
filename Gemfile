@@ -57,7 +57,7 @@ gem 'devise'
 
 group :assets do
   gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-  gem "therubyracer"
+ # gem "therubyracer"
   gem "less-rails"
 end
 

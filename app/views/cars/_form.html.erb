@@ -1,46 +1,62 @@
-<%= form_with(model: car, local: true) do |form| %>
-  <% if car.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(car.errors.count, "error") %> prohibited this car from being saved:</h2>
+<%= form_for @car, :html => { :class => "form-horizontal car" } do |f| %>
 
-      <ul>
-        <% car.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+  <% if @car.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@car.errors.count, "error") %> prohibited this car from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @car.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
         <% end %>
-      </ul>
+        </ul>
+      </div>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_area :user_id %>
+  <div class="form-group">
+    <%= f.label :user_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :user_id, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:user_id) %>
   </div>
-  
+  <div class="form-group">
+    <%= f.label :plate, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :plate, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:plate) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :registration_date, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :registration_date, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:registration_date) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :telefon, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :telefon, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:telefon) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :datum, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :datum, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:datum) %>
+  </div>
 
-  <div class="field">
-    <%= form.label :plate %>
-    <%= form.text_area :plate %>
-  </div>
-  
-
-  <div class="field">
-    <%= form.label :telefon %>
-    <%= form.text_area :telefon%>
-  </div>
-  
-  
-
-  <div class="field">
-    <%= form.label :registration_date %>
-    <%= form.text_area :registration_date %>
-  </div>
-  
-  <div class="field">
-    <%= form.label :datum %>
-    <%= form.text_area :datum %>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                cars_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>
