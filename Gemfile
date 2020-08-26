@@ -56,7 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 group :assets do
-  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+  gem 'twitter-bootstrap-rails', '>= 3.2.0', '< 3.2.2'
  # gem "therubyracer"
   gem "less-rails"
 end

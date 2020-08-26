@@ -9,7 +9,14 @@
       <th><%= model_class.human_attribute_name(:user_id) %></th>
       <th><%= model_class.human_attribute_name(:plate) %></th>
       <th><%= model_class.human_attribute_name(:registration_date) %></th>
+      <th><%= model_class.human_attribute_name(:username) %></th>
+      <th><%= model_class.human_attribute_name(:userphone) %></th>
+      <th><%= model_class.human_attribute_name(:user_name) %></th>
+      <th><%= model_class.human_attribute_name(:user_phone) %></th>
+      <th><%= model_class.human_attribute_name(:username_id) %></th>
+      <th><%= model_class.human_attribute_name(:phone) %></th>
       <th><%= model_class.human_attribute_name(:telefon) %></th>
+      <th><%= model_class.human_attribute_name(:telefonba) %></th>
       <th><%= model_class.human_attribute_name(:datum) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -22,12 +29,17 @@
         <td><%= car.user_id %></td>
         <td><%= car.plate %></td>
         <td><%= car.registration_date %></td>
+        <td><%= car.username %></td>
+        <td><%= car.userphone %></td>
+        <td><%= car.user_name %></td>
+        <td><%= car.user_phone %></td>
+        <td><%= car.username_id %></td>
+        <td><%= car.phone %></td>
         <td><%= car.telefon %></td>
+        <td><%= car.telefonba %></td>
         <td><%= car.datum %></td>
         <td><%=l car.created_at %></td>
         <td>
-          <%= link_to t('.show', :default => t("helpers.links.show")),
-                      car_path(car), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_car_path(car), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),

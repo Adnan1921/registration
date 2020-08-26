@@ -1,5 +1,5 @@
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/ext/ffi_c
-/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200817-25650-1ire72f.rb extconf.rb
+/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200826-15240-1xee5ex.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... no
 checking for ffi_prep_closure_loc() in -llibffi... no
 checking for ffi_prep_closure_loc() in -llibffi-8... no
@@ -122,4 +122,4 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20200817-25650-1djseja
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20200826-15240-qh92vt

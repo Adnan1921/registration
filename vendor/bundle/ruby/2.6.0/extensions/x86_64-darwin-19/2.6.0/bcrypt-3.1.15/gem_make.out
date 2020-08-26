@@ -1,5 +1,5 @@
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.15/ext/mri
-/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200818-59064-de3ogq.rb extconf.rb
+/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200826-15240-185anln.rb extconf.rb
 creating Makefile
 
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.15/ext/mri
@@ -32,4 +32,4 @@ linking shared-object bcrypt_ext.bundle
 
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.15/ext/mri
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bcrypt_ext.bundle ./.gem.20200818-59064-5iubj6
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bcrypt_ext.bundle ./.gem.20200826-15240-1ryt5ub

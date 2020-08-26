@@ -69,6 +69,6 @@ class RegistracijesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def registracije_params
-      params.require(:registracije).permit(:car_id, :car_exp_date)
+      params.require(:registracije).permit(:car_id, :car_exp_date,)
     end
 end

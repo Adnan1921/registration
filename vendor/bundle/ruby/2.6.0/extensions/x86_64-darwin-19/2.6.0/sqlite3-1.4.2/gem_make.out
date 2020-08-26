@@ -1,5 +1,5 @@
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/sqlite3-1.4.2/ext/sqlite3
-/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200817-25650-j0zgay.rb extconf.rb
+/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200826-15240-rg0rj2.rb extconf.rb
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for -ldl... yes
@@ -68,4 +68,4 @@ ld: warning: directory not found for option '-L/usr/local/Cellar/sqlite/3.33.0/l
 
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/sqlite3-1.4.2/ext/sqlite3
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 sqlite3_native.bundle ./.gem.20200817-25650-xzkchj/sqlite3
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 sqlite3_native.bundle ./.gem.20200826-15240-1jcr3dr/sqlite3
