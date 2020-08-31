@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
   resources :users
   resources :cars
-  
-  root :to => redirect("/users/sign_up")
+  resources :home
+  root :to => redirect("/home")
   
   
   #resources :registrations
