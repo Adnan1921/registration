@@ -14,13 +14,13 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
  <div class="form-label-group">
-	     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+	  <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class=>'form-control', :placeholder=>"Email" %>
   </div>
   
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+ <div class="form-label-group">
+	  <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", :class=>'form-control', placeholder: "Name" %>
   </div>
   
   <div class="field">
