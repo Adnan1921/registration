@@ -6,10 +6,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
 //= require bootstrap
-
+//= require rails-ujs
+//= require tempusdominus-bootstrap-4.js
+//= require moment
 //= require_tree .
 
 $(function(){
   /* Your JavaScript goes here... */
-});
+
+$('#datetimepicker').datetimepicker(FUNCTION)
+	$('#datetimepicker').datetimepicker({ sideBySide: true, debug: true })

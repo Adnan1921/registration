@@ -1,5 +1,15 @@
+/*
 
-@import 'bootstrap';
-
+*/
+@import "bootstrap";
+@import "tempusdominus-bootstrap-4.css";
+ 
 /* Your stylesheets goes here... */
-.navbar {}
+.navbar-custom {
+	background-color:#3498db;
+	
+}
+
+body {
+	background-color:#ecf0f1;
+}

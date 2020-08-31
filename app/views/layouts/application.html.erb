@@ -6,7 +6,11 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application' %>
+	
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application'%>
+	
 	
 	
 	
@@ -16,7 +20,7 @@
   <body>
 	  
 	  
-	  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <nav class="navbar navbar-custom navbar-expand-lg navbar-light ">
 	    <a class="navbar-brand" href="#">REGISTRACIJE</a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
@@ -34,7 +38,7 @@
 				  
 				  <%else%>
 				  <li class="nav-item">
-				  	Selam Alejk <%=current_user.id%> <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+				  	  <%=link_to "Logout", destroy_user_session_path, method: :delete, :class=>"nav-link"  %>
 				  </li>
 				  
 				  <% end %>
@@ -50,20 +54,14 @@
 	  
  
 	  <div class="container">
-<<<<<<< HEAD
+              
 	  <div class="header">
-		  <% for menu in @menu do %>
-		  	<a href="/<%= menu%>"><%= menu%></a> &nbsp;
-		  <%end%>
+		
 		  
-		  |<% if !current_user %> <a href="/users/sign_in"> Sign In</a> <a href="/users/sign_up"> Register </a> 
-		  <%else%>
-		  Selam Alejk <%=current_user.id%> <%= button_to "logout", destroy_user_session_path, method: :delete  %>
-		  <% end %>
+		  
 	  </div>
-=======
+
 	 
->>>>>>> 575719594e3e8bb0df4b3bf375d5cf4f7ddf8659
 	  <p class = "notice" ><%= notice %> </p>
 	  <p class = "alert" ><%= alert %></p>
 	  

@@ -60,4 +60,8 @@ group :assets do
  # gem "therubyracer"
   gem "less-rails"
 end
+gem 'bootstrap4-datetime-picker-rails'
+
+
+
 
