@@ -1,2 +1,44 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+             <!-- Background image for card set in CSS! -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Register</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input autofocus="autofocus" class="form-control" autocomplete="name" type="text" name="user[name]" id="user_name">
+                <label for="inputUserame">Username</label>
+              </div>
+
+              <div class="form-label-group">
+               <input autofocus="autofocus" class="form-control" autocomplete="email" type="email" value="" name="user[email]" id="user_email">
+                <label for="inputEmail">Email address</label>
+              </div>
+              
+              <hr>
+
+              <div class="form-label-group">
+                <input autocomplete="new-password"class="form-control" type="password" name="user[password]" id="user_password">
+                <label for="inputPassword">Password</label>
+              </div>
+              
+              <div class="form-label-group">
+                <input autocomplete="new-password" class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+                <label for="inputConfirmPassword">Confirm password</label>
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" <input type="submit" name="commit" value="Sign up" data-disable-with="Sign up">Register</button>
+              <a class="d-block text-center mt-2 small" href="/users/sign_in">Sign In</a>
+              <hr class="my-4">
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

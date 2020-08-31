@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   #devise_for :users
   devise_for :users
   #get'home/index'
-  root to: 'partners#index'
+root :to => redirect("/users/sign_up")
+
   resources :users
   resources :cars
   #resources :registrations
