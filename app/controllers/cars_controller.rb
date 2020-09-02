@@ -1,17 +1,20 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
-  
 
   # GET /cars
   # GET /cars.json
   def index
-    @cars = Car.order(registration_date: :asc)
+@cars = Car.where( :user_id => current_user.id )    
   end
 
   # GET /cars/1require "cars_controller"
   
   # GET /cars/1.json
+  
+    
+  
   def show
+    
   end
   
   # GET /cars/new

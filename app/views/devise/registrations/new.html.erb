@@ -1,4 +1,6 @@
-<body>
+
+
+<body class="bodyid">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-xl-9 mx-auto">
@@ -8,6 +10,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Register</h5>
+			
 			
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -23,30 +26,32 @@
     <%= f.text_field :name, autofocus: true, autocomplete: "name", :class=>'form-control', placeholder: "Name" %>
   </div>
   
-  <div class="field">
-    <%= f.label :partner_id %><br />
-    <%= f.text_field :partner_id, autofocus: true, autocomplete: "name" %>
+ <div class="form-label-group">
+    <%= f.label :partner_id %>
+    <%= f.text_field :partner_id, autofocus: true, autocomplete: "name", :class=>'form-control', placeholder: "Partner" %>
   </div>
 
-  <div class="field">
+ <div class="form-label-group">
     <%= f.label :password %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <% end %>
+    <%= f.password_field :password,  autofocus: true, autocomplete: "new passvord", :class=>'form-control', placeholder: "New password" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+ <div class="form-label-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation,:class=>'form-control',placeholder: "Password confirmation" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+ <div class="form-label-group">
+    <%= f.submit "Sign up" ,autofocus: true, :class=>'form-control'%>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+<% yield %>
+
+			
           </div>
         </div>
       </div>
