@@ -8,7 +8,6 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:car_id) %></th>
       <th><%= model_class.human_attribute_name(:car_exp_date) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -18,7 +17,6 @@
         <td><%= link_to registracije.id, registracije_path(registracije) %></td>
         <td><%= registracije.car_id %></td>
         <td><%= registracije.car_exp_date %></td>
-        <td><%=l registracije.created_at %></td>
         <td>
           <%= link_to t('.show', :default => t("helpers.links.show")),
                       registracije_path(registracije), :class => 'btn btn-default btn-xs' %>
