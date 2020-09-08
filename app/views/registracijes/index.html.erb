@@ -15,7 +15,7 @@
     <% @registracijes.each do |registracije| %>
       <tr>
         <td><%= link_to registracije.id, registracije_path(registracije) %></td>
-        <td><%= registracije.car_id %></td>
+        <td><%= Car.find(registracije.car_id).ime_vozila %></td>
         <td><%= registracije.car_exp_date %></td>
         <td>
           <%= link_to t('.show', :default => t("helpers.links.show")),
