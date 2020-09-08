@@ -4,7 +4,9 @@ class CarsController < ApplicationController
   # GET /cars
   # GET /cars.json
   def index
-@cars = Car.where( :user_id => current_user.id )    
+@cars = Car.where( :user_id => current_user.id )
+
+    
   end
 
   # GET /cars/1require "cars_controller"
@@ -13,9 +15,7 @@ class CarsController < ApplicationController
   
     
   
-  def show
-    
-  end
+ 
   
   # GET /cars/new
   def new

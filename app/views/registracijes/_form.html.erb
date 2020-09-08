@@ -14,13 +14,14 @@
       </div>
     </div>
   <% end %>
-
+<% if car_id %>
   <div class="form-group">
     <%= f.label :car_id, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
       <%= f.text_field :car_id, :class => 'form-control' %>
     </div>
   </div>
+  <%end%>
   <div class="form-group">
     <%= f.label :car_exp_date, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
