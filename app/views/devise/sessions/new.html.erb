@@ -8,9 +8,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Login</h5>
-			<% if user_signed_in? %> 
-			  <li><%= link_to "Hidden", hidden_path %></li>  
-			<% end %>
+	
 			
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
  <div class="form-label-group">

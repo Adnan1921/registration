@@ -25,7 +25,19 @@
     <% end %>
   </tbody>
 </table>
-
+<ul>
+  <% @users.each do |u| %>
+    <li>
+      <%= u.email %>
+      <%=
+        link_to "Delete", 
+        user_path(u), 
+        method: :delete, 
+        data: { confirm: "Really delete this user?" } 
+      %>
+    </li>
+  <% end %>
+</ul>
 <br>
 
 <%= link_to 'New User', new_user_path %>

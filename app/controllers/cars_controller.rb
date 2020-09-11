@@ -59,11 +59,16 @@ class CarsController < ApplicationController
   # DELETE /cars/1
   # DELETE /cars/1.json
   def destroy
+     @registracije = Registracije.where("car_id = #{@car.id}") 
+    @registracije[0].destroy
+    
     @car.destroy
     respond_to do |format|
       format.html { redirect_to cars_url, notice: 'Car was successfully destroyed.' }
       format.json { head :no_content }
     end
+    
+  
   end
  
 
