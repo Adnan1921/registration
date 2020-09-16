@@ -16,6 +16,6 @@ module Registrations
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.action_mailer.default_url_options = { host: 'example.com' }
+    config.action_mailer.default_url_options = { host: 'railstest18@gmail.com' }
   end
 end

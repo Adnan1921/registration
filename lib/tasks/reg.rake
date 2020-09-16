@@ -4,7 +4,7 @@
 
 require 'active_record'
 desc 'List cars'
-task :rrrr => :environment do
+task :reg => :environment do
   @cars = Car.all()
   for car in @cars do
     puts "user: #{car.user_id}"
