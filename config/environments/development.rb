@@ -73,4 +73,6 @@ Rails.application.configure do
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
+  config.gem "binarylogic-searchlogic", :lib => "searchlogic"
+  config.gem 'will_paginate', :version => '~> 2.3.11'
 end

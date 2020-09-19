@@ -33,6 +33,18 @@ class CarsController < ApplicationController
 
     respond_to do |format|
       if @car.save
+        existing = Registracije.where("car_id = #{@car.id}")
+   
+        puts existing.count
+        if existing.count < 1
+          puts "upisi u bazu"
+    
+          @registracije = Registracije.new
+          @registracije.car_id = @car.id
+          @registracije.car_exp_date = @car.registration_date
+     
+          @registracije.save
+        end
         format.html { redirect_to @car, notice: 'Car was successfully created.' }
         format.json { render :show, status: :created, location: @car }
       else
@@ -71,7 +83,7 @@ class CarsController < ApplicationController
   
   end
  
-
+  
   
 
   private
@@ -82,7 +94,7 @@ class CarsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def car_params
-      params.require(:car).permit(:user_id, :plate, :registration_date, :telefon, :ime_vozila )
+      params.require(:car).permit(:user_id, :plate, :registration_date, :telefon, :ime_vozila, :ime_vlasnika )
     end
     
     

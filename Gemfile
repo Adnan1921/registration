@@ -61,7 +61,9 @@ group :assets do
   gem "less-rails"
 end
 gem 'bootstrap4-datetime-picker-rails'
-
+gem 'searchkick'
+gem 'binarylogic-searchlogic'
+gem 'will_paginate'
 
 
 

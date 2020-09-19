@@ -4,9 +4,11 @@ class RegistracijesController < ApplicationController
   # GET /registracijes
   # GET /registracijes.json
   def index
-    @registracijes = Registracije.all
+    @registracijes = Registracije.all 
   end
+  
 
+    
   # GET /registracijes/1
   # GET /registracijes/1.json
   def show

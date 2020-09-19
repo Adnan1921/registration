@@ -23,6 +23,7 @@ task :reg => :environment do
      @registracije = Registracije.new
      @registracije.car_id = car.id
      @registracije.car_exp_date = car.registration_date
+     
      @registracije.save
    end
   
