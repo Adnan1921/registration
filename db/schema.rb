@@ -12,28 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2020_09_19_090541) do
 
-  create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.string "author"
-    t.integer "publication_year"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "cars", force: :cascade do |t|
     t.text "user_id"
     t.text "plate"
     t.text "registration_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.text "username"
-    t.text "userphone"
-    t.text "user_name"
-    t.text "user_phone"
-    t.string "username_id"
-    t.text "phone"
-    t.text "telefon"
-    t.string "telefonba"
+    t.string "telefon"
     t.string "datum"
     t.string "model"
     t.string "ime_vozila"
@@ -47,8 +32,6 @@ ActiveRecord::Schema.define(version: 2020_09_19_090541) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "user_id"
-    t.string "phone_id"
-    t.text "telefon"
     t.text "email"
   end
 
@@ -59,17 +42,10 @@ ActiveRecord::Schema.define(version: 2020_09_19_090541) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "registracijees", force: :cascade do |t|
-    t.string "car_id"
-    t.string "car_exp_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "registracijes", force: :cascade do |t|
+    t.string "car_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "car_id"
     t.string "car_exp_date"
   end
 
