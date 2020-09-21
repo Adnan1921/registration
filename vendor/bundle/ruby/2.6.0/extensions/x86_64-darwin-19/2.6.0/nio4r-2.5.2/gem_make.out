@@ -1,5 +1,5 @@
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.2/ext/nio4r
-/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200817-25650-6yz0e4.rb extconf.rb
+/Users/Macbook/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Macbook/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200921-91199-1mcefsh.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for sys/select.h... yes
@@ -92,4 +92,4 @@ linking shared-object nio4r_ext.bundle
 
 current directory: /Users/Macbook/Documents/registration/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.2/ext/nio4r
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20200817-25650-4gr9ky
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20200921-91199-16geay6

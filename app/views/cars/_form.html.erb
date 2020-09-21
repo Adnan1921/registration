@@ -1,32 +1,115 @@
-<%= form_with(model: car, local: true) do |form| %>
-  <% if car.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(car.errors.count, "error") %> prohibited this car from being saved:</h2>
+<%= form_for @car, :html => { :class => "form-horizontal car" } do |f| %>
 
-      <ul>
-        <% car.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+  <% if @car.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@car.errors.count, "error") %> prohibited this car from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+			
+        <% @car.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
         <% end %>
-      </ul>
+        </ul>
+      </div>
     </div>
   <% end %>
+	<% if current_user%>
+  <div class="form-group">
+    <%= f.label :user_id, :class => 'control-label col-lg-2' %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_area :user_id %>
+    <div class="col-lg-10">
+      <%= f.text_field :user_id, :class => 'form-control', :value => current_user.id  %>
+	  
+    </div>
+
+  </div>
+  	<% end %>
+		
+    <div class="form-group">
+      <%= f.label :ime_vlasnika, :class => 'control-label col-lg-2' %>
+      <div class="col-lg-10">
+        <%= f.text_field :ime_vlasnika, :class => 'form-control' %>
+      </div>
+    </div>
+	
+    <div class="form-group">
+      <%= f.label :ime_vozila, :class => 'control-label col-lg-2' %>
+      <div class="col-lg-10">
+        <%= f.text_field :ime_vozila, :class => 'form-control' %>
+      </div>
+    </div>
+	
+  <div class="form-group">
+    <%= f.label :plate, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :plate, :class => 'form-control' %>
+    </div>
+  </div>
+ <div class="container">
+     <div class="row">
+         <div class="col-sm-6">
+             <div class="form-group">
+ 			    <div class="form-group">
+ 			      <%= f.label :registration_date, :class => 'control-label col-lg-2' %>
+   
+ 			      <div class="col-lg-10">
+	  
+ 			      </div>
+				
+                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                     <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" name="car[registration_date]" id="car_registration_date"/>
+                     <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+ 
+	
+	
+    
+	  
+    <div class="form-group">
+	  
+      <%= f.label :telefon, :class => 'control-label col-lg-2' %>
+	
+      <div class="col-lg-10">
+        <%= f.text_field :telefon, :class => 'form-control' %>
+      </div>
+    </div>
+		
+  
+  
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-outline-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                cars_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :plate %>
-    <%= form.text_area :plate %>
-  </div>
-
-  <div class="field">
-    <%= form.label :registration_date %>
-    <%= form.text_area :registration_date %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+		
+		
+		
+		
+		
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function(){
+			  $("#datetimepicker1").datetimepicker(); 
+			});
+        </script>
+    </div>
+</div>
 <% end %>

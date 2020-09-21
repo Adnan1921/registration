@@ -13,19 +13,17 @@ Gem::Specification.new do |s|
   s.email = ["wycats@gmail.com".freeze, "chris@eppsteins.net".freeze]
   s.homepage = "https://github.com/rails/sass-rails".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.0.8".freeze
+  s.rubygems_version = "3.1.4".freeze
   s.summary = "Sass adapter for the Rails asset pipeline.".freeze
 
-  s.installed_by_version = "3.0.8" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.1.4" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
+  end
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<sassc-rails>.freeze, ["~> 2.1", ">= 2.1.1"])
-    else
-      s.add_dependency(%q<sassc-rails>.freeze, ["~> 2.1", ">= 2.1.1"])
-    end
+  if s.respond_to? :add_runtime_dependency then
+    s.add_runtime_dependency(%q<sassc-rails>.freeze, ["~> 2.1", ">= 2.1.1"])
   else
     s.add_dependency(%q<sassc-rails>.freeze, ["~> 2.1", ">= 2.1.1"])
   end

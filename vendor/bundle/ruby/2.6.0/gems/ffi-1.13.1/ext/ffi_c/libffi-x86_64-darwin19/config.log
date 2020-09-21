@@ -14,7 +14,7 @@ hostname = Macbooks-MacBook-Pro.local
 uname -m = x86_64
 uname -r = 19.6.0
 uname -s = Darwin
-uname -v = Darwin Kernel Version 19.6.0: Sun Jul  5 00:43:10 PDT 2020; root:xnu-6153.141.1~9/RELEASE_X86_64
+uname -v = Darwin Kernel Version 19.6.0: Thu Jun 18 20:49:00 PDT 2020; root:xnu-6153.141.1~1/RELEASE_X86_64
 
 /usr/bin/uname -p = i386
 /bin/uname -X     = unknown
@@ -23,15 +23,15 @@ uname -v = Darwin Kernel Version 19.6.0: Sun Jul  5 00:43:10 PDT 2020; root:xnu-
 /usr/bin/arch -k       = unknown
 /usr/convex/getsysinfo = unknown
 /usr/bin/hostinfo      = Mach kernel version:
-	 Darwin Kernel Version 19.6.0: Sun Jul  5 00:43:10 PDT 2020; root:xnu-6153.141.1~9/RELEASE_X86_64
+	 Darwin Kernel Version 19.6.0: Thu Jun 18 20:49:00 PDT 2020; root:xnu-6153.141.1~1/RELEASE_X86_64
 Kernel configured for up to 4 processors.
 2 processors are physically available.
 4 processors are logically available.
 Processor type: x86_64h (Intel x86-64h Haswell)
 Processors active: 0 1 2 3
 Primary memory available: 8.00 gigabytes
-Default processor set: 522 tasks, 2000 threads, 4 processors
-Load average: 5.71, Mach factor: 0.88
+Default processor set: 457 tasks, 1737 threads, 4 processors
+Load average: 6.45, Mach factor: 0.65
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -86,7 +86,7 @@ configure:3559: checking for gcc
 configure:3586: result: gcc
 configure:3815: checking for C compiler version
 configure:3824: gcc --version >&5
-Apple clang version 12.0.0 (clang-1200.0.26.2)
+Apple clang version 12.0.0 (clang-1200.0.31.1)
 Target: x86_64-apple-darwin19.6.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
@@ -94,7 +94,7 @@ Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-inc
 configure:3835: $? = 0
 configure:3824: gcc -v >&5
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/c++/4.2.1
-Apple clang version 12.0.0 (clang-1200.0.26.2)
+Apple clang version 12.0.0 (clang-1200.0.31.1)
 Target: x86_64-apple-darwin19.6.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
@@ -154,7 +154,7 @@ configure:4624: found /usr/bin/g++
 configure:4635: result: g++
 configure:4662: checking for C++ compiler version
 configure:4671: g++ --version >&5
-Apple clang version 12.0.0 (clang-1200.0.26.2)
+Apple clang version 12.0.0 (clang-1200.0.31.1)
 Target: x86_64-apple-darwin19.6.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
@@ -162,7 +162,7 @@ Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-inc
 configure:4682: $? = 0
 configure:4671: g++ -v >&5
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/c++/4.2.1
-Apple clang version 12.0.0 (clang-1200.0.26.2)
+Apple clang version 12.0.0 (clang-1200.0.31.1)
 Target: x86_64-apple-darwin19.6.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin

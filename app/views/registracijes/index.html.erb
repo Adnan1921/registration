@@ -1,0 +1,57 @@
+<%- model_class = Registracije -%>
+<div class="page-header">   
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+	<%= form_tag(search_page_path, :method => "get",   
+	    class: 'navbar-form navbar-left') do %>  
+				
+	  <div class="input-group">  
+	    <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>  
+	    <div class="input-group-btn">  
+	      <%= button_tag "", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>  
+	    </div>  
+	  </div>  
+	<% end %>
+	
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:Ime_vozila) %></th>
+      <th><%= model_class.human_attribute_name(:Ime_vlasnika) %></th>
+      <th><%= model_class.human_attribute_name(:Broj_telefona) %></th>
+			<th><%= model_class.human_attribute_name(:Datum_registracije) %></th>
+      
+	  
+      <th>Istek registracije</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @registracijes.each do |registracije| %>
+      <tr>
+        <td><%= link_to registracije.id, registracije_path(registracije) %></td>
+				<td><%= Car.find(registracije.car_id).ime_vozila %></td>
+				<td><%= Car.find(registracije.car_id).ime_vlasnika %></td>
+				<td><%= Car.find(registracije.car_id).telefon %></td>
+				
+				
+        <td><%= registracije.car_exp_date %></td>
+				<td>
+       <%   @datum = registracije.car_exp_date.split("/")
+        @dan = @datum[1].to_i
+        @mjesec = @datum[0].to_i
+        @vrijemePrije = DateTime.civil(2020, @mjesec, @dan, 0, 0, 0, 0)
+    @dana = (@vrijemePrije.to_date - Time.now.to_date).to_i
+    if @dana > 0 && @dana < 10 
+    
+    %>
+		istice za <%=@dana%> dana
+		<%end%>
+		
+      </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
