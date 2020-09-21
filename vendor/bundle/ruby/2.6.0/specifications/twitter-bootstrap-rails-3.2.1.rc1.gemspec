@@ -14,31 +14,23 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/seyhunak/twitter-bootstrap-rails".freeze
   s.licenses = ["MIT".freeze]
   s.post_install_message = "Important: You may need to add a javascript runtime to your Gemfile in order for bootstrap's LESS files to compile to CSS. \n\n**********************************************\n\nExecJS supports these runtimes:\n\ntherubyracer - Google V8 embedded within Ruby\n\ntherubyrhino - Mozilla Rhino embedded within JRuby\n\nNode.js\n\nApple JavaScriptCore - Included with Mac OS X\n\nMicrosoft Windows Script Host (JScript)\n\n**********************************************\n".freeze
-  s.rubygems_version = "3.0.8".freeze
+  s.rubygems_version = "3.1.4".freeze
   s.summary = "Bootstrap CSS toolkit for Rails 3.1 Asset Pipeline".freeze
 
-  s.installed_by_version = "3.0.8" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.1.4" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
+  end
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<railties>.freeze, [">= 3.1"])
-      s.add_runtime_dependency(%q<actionpack>.freeze, [">= 3.1"])
-      s.add_runtime_dependency(%q<less-rails>.freeze, [">= 2.5.0"])
-      s.add_runtime_dependency(%q<execjs>.freeze, [">= 2.2", ">= 2.2.2"])
-      s.add_runtime_dependency(%q<rails>.freeze, [">= 3.1"])
-      s.add_development_dependency(%q<less>.freeze, [">= 2.6", ">= 2.6.0"])
-      s.add_development_dependency(%q<therubyracer>.freeze, [">= 0.12", ">= 0.12.1"])
-    else
-      s.add_dependency(%q<railties>.freeze, [">= 3.1"])
-      s.add_dependency(%q<actionpack>.freeze, [">= 3.1"])
-      s.add_dependency(%q<less-rails>.freeze, [">= 2.5.0"])
-      s.add_dependency(%q<execjs>.freeze, [">= 2.2", ">= 2.2.2"])
-      s.add_dependency(%q<rails>.freeze, [">= 3.1"])
-      s.add_dependency(%q<less>.freeze, [">= 2.6", ">= 2.6.0"])
-      s.add_dependency(%q<therubyracer>.freeze, [">= 0.12", ">= 0.12.1"])
-    end
+  if s.respond_to? :add_runtime_dependency then
+    s.add_runtime_dependency(%q<railties>.freeze, [">= 3.1"])
+    s.add_runtime_dependency(%q<actionpack>.freeze, [">= 3.1"])
+    s.add_runtime_dependency(%q<less-rails>.freeze, [">= 2.5.0"])
+    s.add_runtime_dependency(%q<execjs>.freeze, [">= 2.2", ">= 2.2.2"])
+    s.add_runtime_dependency(%q<rails>.freeze, [">= 3.1"])
+    s.add_development_dependency(%q<less>.freeze, [">= 2.6", ">= 2.6.0"])
+    s.add_development_dependency(%q<therubyracer>.freeze, [">= 0.12", ">= 0.12.1"])
   else
     s.add_dependency(%q<railties>.freeze, [">= 3.1"])
     s.add_dependency(%q<actionpack>.freeze, [">= 3.1"])
