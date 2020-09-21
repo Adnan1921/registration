@@ -63,7 +63,7 @@ gem 'devise'
 
 group :assets do
   gem 'twitter-bootstrap-rails', '>= 3.2.0', '< 3.2.2'
- # gem "therubyracer"
+  gem "therubyracer"
   gem "less-rails"
 end
 gem 'bootstrap4-datetime-picker-rails'

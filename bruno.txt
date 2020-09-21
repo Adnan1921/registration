@@ -1,0 +1,448 @@
+!     Warning: Multiple default buildpacks reported the ability to handle this app. The first buildpack in the list below will be used.
+			Detected buildpacks: Ruby,Node.js
+			See https://devcenter.heroku.com/articles/buildpacks#buildpack-detect-order
+-----> Ruby app detected
+-----> Installing bundler 2.0.2
+-----> Removing BUNDLED WITH version in the Gemfile.lock
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.6.3
+-----> Installing dependencies using bundler 2.0.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+       Fetching gem metadata from https://rubygems.org/............
+       Fetching rake 13.0.1
+       Installing rake 13.0.1
+       Fetching concurrent-ruby 1.1.7
+       Fetching thread_safe 0.3.6
+       Fetching minitest 5.14.1
+       Installing minitest 5.14.1
+       Installing thread_safe 0.3.6
+       Installing concurrent-ruby 1.1.7
+       Fetching zeitwerk 2.4.0
+       Installing zeitwerk 2.4.0
+       Fetching builder 3.2.4
+       Installing builder 3.2.4
+       Fetching erubi 1.9.0
+       Installing erubi 1.9.0
+       Fetching mini_portile2 2.4.0
+       Fetching crass 1.0.6
+       Installing mini_portile2 2.4.0
+       Installing crass 1.0.6
+       Fetching rack 2.2.3
+       Fetching nio4r 2.5.2
+       Installing rack 2.2.3
+       Installing nio4r 2.5.2 with native extensions
+       Fetching websocket-extensions 0.1.5
+       Installing websocket-extensions 0.1.5
+       Fetching mimemagic 0.3.5
+       Fetching mini_mime 1.0.2
+       Installing mimemagic 0.3.5
+       Installing mini_mime 1.0.2
+       Fetching bcrypt 3.1.15
+       Installing bcrypt 3.1.15 with native extensions
+       Fetching msgpack 1.3.3
+       Installing msgpack 1.3.3 with native extensions
+       Fetching method_source 1.0.0
+       Installing method_source 1.0.0
+       Fetching thor 1.0.1
+       Installing thor 1.0.1
+       Using bundler 2.0.2
+       Fetching commonjs 0.2.7
+       Installing commonjs 0.2.7
+       Fetching orm_adapter 0.5.0
+       Installing orm_adapter 0.5.0
+       Fetching multi_json 1.15.0
+       Installing multi_json 1.15.0
+       Fetching multipart-post 2.1.1
+       Installing multipart-post 2.1.1
+       Fetching execjs 2.7.0
+       Installing execjs 2.7.0
+       Fetching ffi 1.13.1
+       Installing ffi 1.13.1 with native extensions
+       Fetching hashie 4.1.0
+       Installing hashie 4.1.0
+       Fetching pg 0.21.0
+       Installing pg 0.21.0 with native extensions
+       Fetching tilt 2.0.10
+       Installing tilt 2.0.10
+       Fetching turbolinks-source 5.2.0
+       Installing turbolinks-source 5.2.0
+       Fetching will_paginate 3.3.0
+       Installing will_paginate 3.3.0
+       Fetching tzinfo 1.2.7
+       Installing tzinfo 1.2.7
+       Fetching nokogiri 1.10.10
+       Installing nokogiri 1.10.10 with native extensions
+       Fetching i18n 1.8.5
+       Installing i18n 1.8.5
+       Fetching websocket-driver 0.7.3
+       Installing websocket-driver 0.7.3 with native extensions
+       Fetching rack-test 1.1.0
+       Installing rack-test 1.1.0
+       Fetching warden 1.2.8
+       Installing warden 1.2.8
+       Fetching sprockets 4.0.2
+       Installing sprockets 4.0.2
+       Fetching rack-proxy 0.6.5
+       Installing rack-proxy 0.6.5
+       Fetching mail 2.7.1
+       Installing mail 2.7.1
+       Fetching marcel 0.3.3
+       Installing marcel 0.3.3
+       Fetching puma 4.3.5
+       Installing puma 4.3.5 with native extensions
+       Fetching less 2.6.0
+       Installing less 2.6.0
+       Fetching elasticsearch-api 7.9.0
+       Installing elasticsearch-api 7.9.0
+       Fetching faraday 1.0.1
+       Installing faraday 1.0.1
+       Fetching bootsnap 1.4.8
+       Installing bootsnap 1.4.8 with native extensions
+       Fetching turbolinks 5.2.1
+       Installing turbolinks 5.2.1
+       Fetching sassc 2.4.0
+       Installing sassc 2.4.0 with native extensions
+       Fetching activesupport 6.0.3.2
+       Installing activesupport 6.0.3.2
+       Fetching loofah 2.6.0
+       Installing loofah 2.6.0
+       Fetching elasticsearch-transport 7.9.0
+       Installing elasticsearch-transport 7.9.0
+       Fetching rails-dom-testing 2.0.3
+       Installing rails-dom-testing 2.0.3
+       Fetching globalid 0.4.2
+       Fetching activemodel 6.0.3.2
+       Installing globalid 0.4.2
+       Installing activemodel 6.0.3.2
+       Fetching jbuilder 2.10.0
+       Installing jbuilder 2.10.0
+       Fetching rails-html-sanitizer 1.3.0
+       Installing rails-html-sanitizer 1.3.0
+       Fetching elasticsearch 7.9.0
+       Installing elasticsearch 7.9.0
+       Fetching activejob 6.0.3.2
+       Installing activejob 6.0.3.2
+       Fetching activerecord 6.0.3.2
+       Installing activerecord 6.0.3.2
+       Fetching actionview 6.0.3.2
+       Installing actionview 6.0.3.2
+       Fetching searchkick 4.4.1
+       Installing searchkick 4.4.1
+       Fetching actionpack 6.0.3.2
+       Installing actionpack 6.0.3.2
+       Fetching binarylogic-searchlogic 2.3.5
+       Installing binarylogic-searchlogic 2.3.5
+       Fetching actioncable 6.0.3.2
+       Fetching activestorage 6.0.3.2
+       Installing actioncable 6.0.3.2
+       Installing activestorage 6.0.3.2
+       Fetching actionmailer 6.0.3.2
+       Installing actionmailer 6.0.3.2
+       Fetching railties 6.0.3.2
+       Fetching less-rails 4.0.0
+       Installing railties 6.0.3.2
+       Installing less-rails 4.0.0
+       Fetching sprockets-rails 3.2.1
+       Installing sprockets-rails 3.2.1
+       Fetching actionmailbox 6.0.3.2
+       Installing actionmailbox 6.0.3.2
+       Fetching actiontext 6.0.3.2
+       Installing actiontext 6.0.3.2
+       Fetching momentjs-rails 2.20.1
+       Fetching jquery-rails 4.4.0
+       Installing momentjs-rails 2.20.1
+       Installing jquery-rails 4.4.0
+       Fetching responders 3.0.1
+       Installing responders 3.0.1
+       Fetching rails 6.0.3.2
+       Installing rails 6.0.3.2
+       Fetching webpacker 4.3.0
+       Installing webpacker 4.3.0
+       Fetching devise 4.7.2
+       Installing devise 4.7.2
+       Fetching twitter-bootstrap-rails 3.2.1.rc1
+       Installing twitter-bootstrap-rails 3.2.1.rc1
+       Fetching moment-timezone-rails 1.0.0
+       Installing moment-timezone-rails 1.0.0
+       Fetching bootstrap4-datetime-picker-rails 0.3.1
+       Installing bootstrap4-datetime-picker-rails 0.3.1
+       Fetching sassc-rails 2.1.2
+       Installing sassc-rails 2.1.2
+       Fetching sass-rails 6.0.0
+       Installing sass-rails 6.0.0
+       Bundle complete! 25 Gemfile dependencies, 81 gems now installed.
+       Gems in the groups development and test were not installed.
+       Bundled gems are installed into `./vendor/bundle`
+       Post-install message from i18n:
+       
+       HEADS UP! i18n 1.1 changed fallbacks to exclude default locale.
+       But that may break your application.
+       
+       If you are upgrading your Rails application from an older version of Rails:
+       
+       Please check your Rails app for 'config.i18n.fallbacks = true'.
+       If you're using I18n (>= 1.1.0) and Rails (< 5.2.2), this should be
+       'config.i18n.fallbacks = [I18n.default_locale]'.
+       If not, fallbacks will be broken in your app by I18n 1.1.x.
+       
+       If you are starting a NEW Rails application, you can ignore this notice.
+       
+       For more info see:
+       https://github.com/svenfuchs/i18n/releases/tag/v1.1.0
+       
+       Post-install message from twitter-bootstrap-rails:
+       Important: You may need to add a javascript runtime to your Gemfile in order for bootstrap's LESS files to compile to CSS. 
+       
+       **********************************************
+       
+       ExecJS supports these runtimes:
+       
+       therubyracer - Google V8 embedded within Ruby
+       
+       therubyrhino - Mozilla Rhino embedded within JRuby
+       
+       Node.js
+       
+       Apple JavaScriptCore - Included with Mac OS X
+       
+       Microsoft Windows Script Host (JScript)
+       
+       **********************************************
+       Bundle completed (212.04s)
+       Cleaning up the bundler cache.
+-----> Installing node-v12.16.2-linux-x64
+-----> Installing yarn-v1.22.4
+-----> Detecting rake tasks
+ !
+ !     Could not detect rake tasks
+ !     ensure you can run `$ bundle exec rake -P` against your app
+ !     and using the production group of your Gemfile.
+ !     [WARNING] Please install gem 'therubyracer' to use Less.
+ !     rake aborted!
+ !     LoadError: cannot load such file -- v8
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:34:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/java_script/v8_context.rb:2:in `<main>'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/java_script.rb:9:in `default_context_wrapper'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/java_script.rb:17:in `context_wrapper'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/loader.rb:13:in `initialize'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less.rb:14:in `new'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less.rb:14:in `<module:Less>'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less.rb:9:in `<main>'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-rails-4.0.0/lib/less/rails.rb:6:in `<main>'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-rails-4.0.0/lib/less-rails.rb:1:in `<main>'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:81:in `block (2 levels) in require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:76:in `each'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:76:in `block in require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:65:in `each'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:65:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler.rb:114:in `require'
+ !     /tmp/build_f7fc6327/config/application.rb:7:in `<main>'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:53:in `require_relative'
+ !     /tmp/build_f7fc6327/Rakefile:4:in `<main>'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:318:in `block in load'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:318:in `load'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/rake_module.rb:29:in `load_rakefile'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:703:in `raw_load_rakefile'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:104:in `block in load_rakefile'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:186:in `standard_exception_handling'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:103:in `load_rakefile'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:82:in `block in run'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:186:in `standard_exception_handling'
+ !     /tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:80:in `run'
+ !     /tmp/build_f7fc6327/bin/rake:4:in `<main>'
+ !
+/tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/helpers/rake_runner.rb:106:in `load_rake_tasks!': Could not detect rake tasks (LanguagePack::Helpers::RakeRunner::CannotLoadRakefileError)
+ensure you can run `$ bundle exec rake -P` against your app
+and using the production group of your Gemfile.
+[WARNING] Please install gem 'therubyracer' to use Less.
+rake aborted!
+LoadError: cannot load such file -- v8
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:34:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/java_script/v8_context.rb:2:in `<main>'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/java_script.rb:9:in `default_context_wrapper'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/java_script.rb:17:in `context_wrapper'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less/loader.rb:13:in `initialize'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less.rb:14:in `new'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less.rb:14:in `<module:Less>'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-2.6.0/lib/less.rb:9:in `<main>'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-rails-4.0.0/lib/less/rails.rb:6:in `<main>'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/less-rails-4.0.0/lib/less-rails.rb:1:in `<main>'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:81:in `block (2 levels) in require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:76:in `each'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:76:in `block in require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:65:in `each'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:65:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bundler-2.0.2/lib/bundler.rb:114:in `require'
+/tmp/build_f7fc6327/config/application.rb:7:in `<main>'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:53:in `require_relative'
+/tmp/build_f7fc6327/Rakefile:4:in `<main>'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:318:in `block in load'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:318:in `load'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/rake_module.rb:29:in `load_rakefile'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:703:in `raw_load_rakefile'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:104:in `block in load_rakefile'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:186:in `standard_exception_handling'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:103:in `load_rakefile'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:82:in `block in run'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:186:in `standard_exception_handling'
+/tmp/build_f7fc6327/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/lib/rake/application.rb:80:in `run'
+/tmp/build_f7fc6327/bin/rake:4:in `<main>'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/ruby.rb:1068:in `rake'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails4.rb:84:in `block (2 levels) in run_assets_precompile_rake_task'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:190:in `log'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails4.rb:78:in `block in run_assets_precompile_rake_task'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:18:in `block (2 levels) in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:40:in `yield_with_block_depth'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:17:in `block in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/vendor/ruby/heroku-18/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:16:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:50:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:46:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails4.rb:77:in `run_assets_precompile_rake_task'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/ruby.rb:112:in `block (2 levels) in compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/ruby.rb:1089:in `allow_git'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/ruby.rb:105:in `block in compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:18:in `block (2 levels) in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:40:in `yield_with_block_depth'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:17:in `block in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/vendor/ruby/heroku-18/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:16:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:50:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:46:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/ruby.rb:94:in `compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails2.rb:62:in `block in compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:18:in `block (2 levels) in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:40:in `yield_with_block_depth'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:17:in `block in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/vendor/ruby/heroku-18/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:16:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:50:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:46:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails2.rb:60:in `compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails3.rb:42:in `block in compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:18:in `block (2 levels) in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:40:in `yield_with_block_depth'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:17:in `block in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/vendor/ruby/heroku-18/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:16:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:50:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:46:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails3.rb:41:in `compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails4.rb:41:in `block in compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:18:in `block (2 levels) in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:40:in `yield_with_block_depth'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:17:in `block in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/vendor/ruby/heroku-18/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:16:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:50:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:46:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails4.rb:40:in `compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails6.rb:20:in `block in compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:18:in `block (2 levels) in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:40:in `yield_with_block_depth'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:17:in `block in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/vendor/ruby/heroku-18/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:16:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:50:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:46:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/rails6.rb:18:in `compile'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/bin/support/ruby_compile:20:in `block (2 levels) in <main>'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/base.rb:190:in `log'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/bin/support/ruby_compile:19:in `block in <main>'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:35:in `block in trace'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:18:in `block (2 levels) in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:40:in `yield_with_block_depth'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:17:in `block in instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/vendor/ruby/heroku-18/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:16:in `instrument'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/lib/language_pack/instrument.rb:35:in `trace'
+	from /tmp/codon/tmp/buildpacks/50d5eddf222a9b7326028041d4e6509f915ccf2c/bin/support/ruby_compile:15:in `<main>'
+ !     Push rejected, failed to compile Ruby app.
+ !     Push failed
