@@ -66,6 +66,9 @@ gem 'bootstrap4-datetime-picker-rails'
 gem 'searchkick'
 gem 'binarylogic-searchlogic'
 gem 'will_paginate'
+group :production do
+  gem 'pg'
+end
 
 
 
